@@ -388,7 +388,7 @@ function isOldEnough(){
 //////////////////PROBLEM 26////////////////////
 
 // Do not edit the code below.
-let workEthic = "TBD";
+let workEthic = 'great';
 // Do not edit the code above.
 
 
@@ -397,7 +397,7 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  if (workEthic >= great){
+  if (workEthic == 'great'){
     return "success at DevMountain"
   } else {
     return "failure at DevMountain" 
@@ -409,7 +409,7 @@ function successPredictor(){
 //////////////////PROBLEM 27////////////////////
 
 // Do not edit the code below.
-let cookieType = "TBD";
+let cookieType = "raisin";
 // Do not edit the code above.
 
 
@@ -418,7 +418,11 @@ let cookieType = "TBD";
 // The variable cookieType will be changed during testing
 
 function eatOrTrash(){
-  // Code here
+  if (cookieType === "raisin" ){
+    return "throw in trash"
+  } else {
+    return "eat"
+  }// Code here
 };
 
 
@@ -426,8 +430,8 @@ function eatOrTrash(){
 //////////////////PROBLEM 28////////////////////
 
 // Do not edit the code below.
-let myTeamScore = "TBD";
-let yourTeamScore = "TBD";
+let myTeamScore = "10";
+let yourTeamScore = "5";
 // Do not edit the code above.
 
 
@@ -436,7 +440,11 @@ let yourTeamScore = "TBD";
 // The myTeamScore and yourTeamScore variables will be changed during testing
 
 function finalScore(){
-  // Code here
+  if (myTeamScore > yourTeamScore ){
+    return "we are the champions"
+  } else {
+    return ":(" 
+  } // Code here
 };
 
 
@@ -457,7 +465,13 @@ age = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function findCorrectTransportation(){
-  // Code here
+  if ( age >= 3 && age <= 7 ){
+    return "tricycle"
+  } else if ( age >= 8 && age <= 15){
+    return "bicycle"
+  }else {
+    return "car"
+  }// Code here
 };
 
 
@@ -465,8 +479,8 @@ function findCorrectTransportation(){
 //////////////////PROBLEM 30////////////////////
 
 // Do not edit the code below.
-let cash = "TBD";
-let temp = "TBD";
+let cash = "true";
+let temp = "hot";
 // Do not edit the code above.
 
 
@@ -478,7 +492,11 @@ let temp = "TBD";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  // Code here
+  if ( temp === "hot" && cash == "true" ){
+    return "Get Ice Cream!"
+  } else {
+    return "Save up for another day."
+  }// Code here
 };
 
 
@@ -486,8 +504,8 @@ function doIGetIceCream(){
 //////////////////PROBLEM 31////////////////////
 
 // Do not edit the code below.
-let chores = "TBD";
-let work = "TBD";
+let chores = " ";
+let work = "0";
 // Do not edit the code above.
 
 
@@ -498,7 +516,9 @@ let work = "TBD";
 // The chores and work variables will always be true or false and will be changed during testing
 
 function doIHaveFreeTime(){
-  // Code here
+  if ( chores == " " || work == "0"){
+    return "free time!" 
+  } // Code here
 };
 
 
@@ -507,8 +527,8 @@ function doIHaveFreeTime(){
 
 // Do not edit the code false.
 let crash = false;
-let currentSpeed = "TBD";
-let brakes = "TBD";
+let currentSpeed = "fast";
+let brakes = " ";
 // Do not edit the code above.
 
 
@@ -520,7 +540,11 @@ let brakes = "TBD";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  // Code here
+  if ( currentSpeed  === "fast" && brakes === " " ){
+    return crash(true)
+  } else {
+    return "do nothing "
+  } // Code here
 };
 
 
@@ -531,7 +555,7 @@ function setCrash(){
 user = {
   name: "Tiffany",
   total: 50
-}
+};
 // Do not edit the code above.
 
 
@@ -544,7 +568,13 @@ user = {
 
 // Code here
 
-
+function makePurchase (priceOfI1em){
+  if ( priceOfItem <= user.total){
+    return (total - priceOfItem)
+  } else if (priceOfItem > user.total){
+    return "not enough funds"
+  } 
+};
 
 //////////////////PROBLEM 34////////////////////
 
