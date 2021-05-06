@@ -167,22 +167,22 @@ var cowboy = {
 
 // Code here
 
-// let dataTypes:{
+// var dataTypes = [
 // number: 42,
 // string: "meaning",
 // boolean: "true",
 // arr: [1,2,3,4,5],
-//  const spaceship = {
+// const spaceship ={
 //     fuel: "liquid hydrogen",
 //     topSpeed: 36000,
 //     fuelLevel: 100,
 //     altitude: 0,
 //   },
-//  function launch() {
+// function launch(){
 //     spaceship.fuelLevel -= 30;
 //     spaceship.altidude += 1000;
-//  },
-// }
+//  ]
+
 
 
 //////////////////PROBLEM 13////////////////////
@@ -299,8 +299,8 @@ function fn (goToGroceryStore){
 //////////////////PROBLEM 20////////////////////
 
 // Do not edit the code below.
-// let firstName = "Indiana";
-// let lastName = "Jones";
+let firstName = "Indiana";
+let lastName = "Jones";
 // Do not edit the code above.
 
 
@@ -309,9 +309,9 @@ function fn (goToGroceryStore){
 
 // Code here
 
-// function createName (){
-// return firstName  + lastName;
-// }
+function createName (){
+return firstName + " " + lastName
+}
 
 //////////////////PROBLEM 21////////////////////
 
@@ -341,9 +341,9 @@ return num1* num2
 
 // Code here
 
-// function sayHello (greeting, name){
-// return "Hello  + Daniela";
-// };
+function sayHello (greeting, name){
+return greeting + " " + name
+};
 
 
 
@@ -358,11 +358,11 @@ return num1* num2
 
 // Code here
 
-// function makeExercise (bike, 9){
-// return {
-//   exerciseName: 'bike',
-//   duration: 9,
-// }};
+function makeExercise (exerciseName, duration){
+return Obj= {
+  exerciseName: 'cycling',
+  duration: 5,
+}};
 
 //////////////////PROBLEM 25////////////////////
 
@@ -568,11 +568,11 @@ user = {
 
 // Code here
 
-function makePurchase (priceOfI1em){
-  if ( priceOfItem <= user.total){
+function makePurchase (priceOf200I1em){
+  if ( priceOfItem <= total){
     return (total - priceOfItem)
-  } else if (priceOfItem > user.total){
-    return "not enough funds"
+  } else if (priceOfItem > total){
+    return ("not enough funds")
   } 
 };
 
@@ -603,4 +603,19 @@ function sleep(){
 // Use the if and else keywords in your solution
 // The arguments passed into decisionMaker will always be true or false and will be changed during testing
 
+
+function decisionMaker ( hungry, tired){
+   if ( hungry == "yum yum" && tired == " "){
+     return (eat ())
+    } else if ( hungry == " " && tired == "zzz zzz zzz"){
+       return (sleep ())
+    } else {
+           return ("undecided")
+         }
+   };
+
+
+
+
 // Code here
+
