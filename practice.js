@@ -153,36 +153,37 @@ var cowboy = {
 // 	spaceship.fuelLevel -= 30;
 // 	spaceship.altidude += 1000;
 // }
-// // Do not edit the code above.
+// Do not edit the code above.
 
 
-// // Create a variable called dataTypes which should be an array of the following 6 items:
-// //   the number 42
-// //   the string "meaning"
-// //   the boolean true
-// //   an array with 5 numbers
-// //   the object spaceship (provided for you)
-// //   the function launch (provided for you)
+// Create a variable called dataTypes which should be an array of the following 6 items:
+//   the number 42
+//   the string "meaning"
+//   the boolean true
+//   an array with 5 numbers
+//   the object spaceship (provided for you)
+//   the function launch (provided for you)
 
 
-// //Code here
+// Code here
 
-// // var dataTypes: [
-// //  42,
-// // "meaning",
-// //  "true",
-// // [1,2,3,4,5],
-// //  const spaceship = {
-// //     fuel: "liquid hydrogen",
-// //     topSpeed: 36000,
-// //     fuelLevel: 100,
-// //     altitude: 0,
-// //   };
-// //  function launch() {
-// //     spaceship.fuelLevel -= 30;
-// //     spaceship.altidude += 1000;
-// //   };
-// // ];
+// let dataTypes:{
+// number: 42,
+// string: "meaning",
+// boolean: "true",
+// arr: [1,2,3,4,5],
+//  const spaceship = {
+//     fuel: "liquid hydrogen",
+//     topSpeed: 36000,
+//     fuelLevel: 100,
+//     altitude: 0,
+//   },
+//  function launch() {
+//     spaceship.fuelLevel -= 30;
+//     spaceship.altidude += 1000;
+//  },
+// }
+
 
 //////////////////PROBLEM 13////////////////////
 
@@ -222,8 +223,7 @@ let food = 'pizza';
 
 function favFood(){
   return `My favorite food is ${food}`
-  
-};
+  };
 
 
 
@@ -238,8 +238,8 @@ let theBoss;
 // Edit the function assignName so that when it is invoked with the variable theName passed in as an argument,
 // the function assigns the value of theName to theBoss variable
 
-function assignName(name){
-  // Code here
+function assignName(theName){
+  theBoss = 'Jeremy';// Code here
 };
 
 
@@ -259,7 +259,7 @@ let user = {
 // edit the function getName so that it accesses the name property of the user object and returns its value
 
 function getName(userObj){
-  return // Code here
+  return user.name; // Code here 
 };
 
 
@@ -281,7 +281,7 @@ let calendar = {
 // Make sure you are accessing it from the weekDays array of the calendar object
 
 function getWeekDay(calendar){
-  return // Code here
+  return calendar.weekDays['2'];// Code here
 }
 
 
@@ -292,13 +292,15 @@ function getWeekDay(calendar){
 
 // Code here
 
-
+function fn (goToGroceryStore){
+  return goToGroceryStore;
+}
 
 //////////////////PROBLEM 20////////////////////
 
 // Do not edit the code below.
-let firstName = "Indiana";
-let lastName = "Jones";
+// let firstName = "Indiana";
+// let lastName = "Jones";
 // Do not edit the code above.
 
 
@@ -307,15 +309,18 @@ let lastName = "Jones";
 
 // Code here
 
-
+// function createName (){
+// return firstName  + lastName;
+// }
 
 //////////////////PROBLEM 21////////////////////
 
 // Create a function called showMeSeven that returns the number 7
 
 // Code here
-
-
+function showMeSeven(){
+return 7;
+}
 
 //////////////////PROBLEM 22////////////////////
 
@@ -323,6 +328,9 @@ let lastName = "Jones";
 
 // Code here
 
+function multiplier ( num1, num2){
+return num1* num2
+}
 
 
 //////////////////PROBLEM 23////////////////////
@@ -332,6 +340,12 @@ let lastName = "Jones";
 // The returned value should include a space between the greeting and name parameters
 
 // Code here
+
+// function sayHello (greeting, name){
+// return "Hello  + Daniela";
+// };
+
+
 
 
 
@@ -344,7 +358,11 @@ let lastName = "Jones";
 
 // Code here
 
-
+// function makeExercise (bike, 9){
+// return {
+//   exerciseName: 'bike',
+//   duration: 9,
+// }};
 
 //////////////////PROBLEM 25////////////////////
 
@@ -358,7 +376,11 @@ let age = "TBD";
 // The variable age will be changed during testing
 
 function isOldEnough(){
-  // Code here
+ if (age > 21 ){
+   return "old enough" 
+ } else {
+   return "not yet"
+ } // Code here
 };
 
 
@@ -375,7 +397,11 @@ let workEthic = "TBD";
 // The variable workEthic will be changed during testing
 
 function successPredictor(){
-  // Code here
+  if (workEthic >= great){
+    return "success at DevMountain"
+  } else {
+    return "failure at DevMountain" 
+  }// Code here
 };
 
 
