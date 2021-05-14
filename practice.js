@@ -142,17 +142,17 @@ var cowboy = {
 //////////////////PROBLEM 12////////////////////
 
 // // Do not edit the code below.
-// const spaceship = {
-// 	fuel: "liquid hydrogen",
-// 	topSpeed: 36000,
-// 	fuelLevel: 100,
-// 	altitude: 0,
-// };
+const spaceship = {
+	fuel: "liquid hydrogen",
+	topSpeed: 36000,
+	fuelLevel: 100,
+	altitude: 0,
+};
 
-// function launch() {
-// 	spaceship.fuelLevel -= 30;
-// 	spaceship.altidude += 1000;
-// }
+function launch() {
+	spaceship.fuelLevel -= 30;
+	spaceship.altidude += 1000;
+}
 // Do not edit the code above.
 
 
@@ -167,22 +167,7 @@ var cowboy = {
 
 // Code here
 
-// var dataTypes = [
-// number: 42,
-// string: "meaning",
-// boolean: "true",
-// arr: [1,2,3,4,5],
-// const spaceship ={
-//     fuel: "liquid hydrogen",
-//     topSpeed: 36000,
-//     fuelLevel: 100,
-//     altitude: 0,
-//   },
-// function launch(){
-//     spaceship.fuelLevel -= 30;
-//     spaceship.altidude += 1000;
-//  ]
-
+var dataTypes = [ 42, "meaning", true, [1,2,3,4,5], spaceship, launch];
 
 
 //////////////////PROBLEM 13////////////////////
@@ -191,7 +176,7 @@ var cowboy = {
 
 function sum(num1, num2){
   return num1 + num2 // Code here  
-  };
+  }
   
 
   
@@ -359,10 +344,11 @@ return greeting + " " + name
 // Code here
 
 function makeExercise (exerciseName, duration){
-return Obj= {
-  exerciseName: 'cycling',
-  duration: 5,
-}};
+return {
+   exerciseName,
+   duration,
+}
+};
 
 //////////////////PROBLEM 25////////////////////
 
@@ -492,7 +478,7 @@ let temp = "hot";
 // The variable age will always be a number and will be changed during testing
 
 function doIGetIceCream(){
-  if ( temp === "hot" && cash == "true" ){
+  if ( temp === "hot" && cash === true ){
     return "Get Ice Cream!"
   } else {
     return "Save up for another day."
@@ -540,12 +526,11 @@ let brakes = " ";
 // The brakes variables will always be a boolean and will be changed during testing
 
 function setCrash(){
-  if ( currentSpeed  === "fast" && brakes === " " ){
-    return crash(true)
-  } else {
-    return "do nothing "
-  } // Code here
-};
+  if ( currentSpeed  === "fast" && !brakes){
+    crash=true
+  }
+};// Code here
+
 
 
 
@@ -568,11 +553,11 @@ user = {
 
 // Code here
 
-function makePurchase (priceOf200I1em){
-  if ( priceOfItem <= total){
-    return (total - priceOfItem)
-  } else if (priceOfItem > total){
-    return ("not enough funds")
+function makePurchase (priceOfItem){
+  if ( priceOfItem <= user.total){
+     user.total -= priceOfItem
+  } else if (priceOfItem > user.total){
+    return "not enough funds"
   } 
 };
 
@@ -605,17 +590,12 @@ function sleep(){
 
 
 function decisionMaker ( hungry, tired){
-   if ( hungry == "yum yum" && tired == " "){
-     return (eat ())
-    } else if ( hungry == " " && tired == "zzz zzz zzz"){
-       return (sleep ())
+   if ( hungry && !tired ){
+     return eat()
+    } else if ( !hungry && tired ){
+       return sleep()
     } else {
-           return ("undecided")
+           return "undecided"
          }
-   };
-
-
-
-
-// Code here
+   };// Code here
 
